@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg: #09090A;
+  --bg-input-check: #8B5CF6;
+  --bg-input: #18181B;
+  --border: #8B5CF6;
+  --text-color: #A1A1AA;
+  --text-button-color: #ffffff;
+  --inter: 'Inter', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4.8rem;
+}
+
+button {
+  background-color: transparent;
+  color: var(--text-button-color);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 125%;
+}
+
+form {
+  display: flex;
+
+  padding: 0 4.8rem;
+}
+
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-top: 5.5rem;
+}
+
+.habit {
+  width: 6.4rem;
+  height: 6.4rem;
+  font-size: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 4.8rem;
+  margin-left: 3.2rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.day div {
+  color: var(--text-color);
+  font-family: var(--roboto);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 125%;
+  margin-bottom: .8rem;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 2px solid var(--bg-input);
+  border-radius: .8rem;
+}
+
+input:checked {
+  background-color: var(--bg-input-check);
+}

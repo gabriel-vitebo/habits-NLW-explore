@@ -2,12 +2,42 @@
   <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Habits - NLW setup</title>
   </head>
   <body>
-    
+    <header>
+      <img src="./assets/logo.svg" alt="Logo do aplicativo Habits">
+      <button>
+        <img src="./assets/plus.svg" alt="sinal de mais roxo dentro do botão para registrar o dia">
+        Registrar meu dia
+      </button>
+    </header>
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit">🏃‍♂️</div>
+        <div class="habit">💧</div>
+        <div class="habit">💻</div>
+      </div>
+      <div class="days">
+        <div class="day">
+          <div>03/01</div>
+          <input type="checkbox" checked id="run-icon">
+          <input type="checkbox" id="water-icon">
+          <input type="checkbox" id="study-icon">
+        </div>
+        <div class="day">
+          <div>04/01</div>
+          <input type="checkbox" checked id="run-icon">
+          <input type="checkbox" id="water-icon">
+          <input type="checkbox" id="study-icon">
+        </div>
+      </div>
+    </form>
   </body>
 </html>
