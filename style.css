@@ -25,6 +25,13 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 4.8rem;
+  width: 100%;
+  position: fixed;
+  background-color: var(--bg);
+}
+
+.logo {
+  margin-right: 5rem;
 }
 
 button {
@@ -32,6 +39,7 @@ button {
   color: var(--text-button-color);
   display: flex;
   align-items: center;
+  margin-right: 10rem;
   gap: 1.2rem;
   border: 1px solid var(--border);
   border-radius: 0.8rem;
@@ -46,7 +54,8 @@ button {
 form {
   display: flex;
 
-  padding: 0 4.8rem;
+  padding: 18.2rem 4.8rem 4.8rem;
+  width: fit-content;
 }
 
 .habits {
@@ -68,7 +77,7 @@ form {
 .days {
   display: flex;
   gap: 4.8rem;
-  margin-left: 3.2rem;
+  margin-left: 6.4rem;
 }
 
 .day {
@@ -99,4 +108,11 @@ input {
 
 input:checked {
   background-color: var(--bg-input-check);
+}
+
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
