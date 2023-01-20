@@ -28,6 +28,8 @@ header {
   width: 100%;
   position: fixed;
   background-color: var(--bg);
+
+  animation: headerDropDown .6s 0.3s backwards;
 }
 
 .logo {
@@ -63,6 +65,8 @@ form {
   flex-direction: column;
   gap: 2.4rem;
   margin-top: 5.5rem;
+
+  animation: habitsSlideRight .6s 0.3s backwards;
 }
 
 .habit {
@@ -83,6 +87,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+
+  animation: habitsSlideRight .6s 0.6s backwards;
 }
 
 .day div {
@@ -108,10 +114,37 @@ input {
 input:checked {
   background-color: var(--bg-input-check);
 }
+@keyframes headerDropDown {
+  0% {
+    transform: translateY(-3.3rem);
+    opacity: 0;
+  }
+
+  100%  {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes habitsSlideRight {
+  0% {
+    transform: translateX(-3.3rem);
+    opacity: 0;
+  }
+
+  100%  {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 
 @media (max-width: 570px) {
   button div {
     display: none;
+  }
+
+  form {
+    padding-left: 4.5rem;
   }
 }
